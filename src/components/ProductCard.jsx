@@ -7,7 +7,7 @@ export const ProductCard=({product})=> {
     <>
     <div className={styles.cardWrapper}>
         <div className={styles.imageWrapper}
-             style={{backgroundImage: ` url(${product.images[0]})`}}>
+             style={{backgroundImage: `url(${product.images[0]})`}}>
         </div>
         <div>
             <h2>{product.title}</h2>
