@@ -6,13 +6,7 @@
   }
   .inputField {
     padding: 0.5rem;
-  }
-  .sortBtn {
-    height: 40px;
-    background-color: rgb(75, 137, 230);
-    outline: none;
-    border: none;
-    cursor: pointer;
+
   }
   .cardsWrapper {
     display: flex;
@@ -25,16 +19,4 @@
     flex-direction: column;
     gap: 1rem;
   }
-  .mainActionBtn {
-    width: 150px;
-    height: 40px;
-    background-color: rgb(75, 137, 230);
-    outline: none;
-    border: none;
-    cursor: pointer;
-    align-self: center;
-    &:disabled {
-      opacity: 0.7;
-      cursor: not-allowed;
-    }
-  }
+  

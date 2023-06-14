@@ -21,17 +21,11 @@
     height: 100%;
     object-fit: cover;
   }
-  .actionBtn {
+
+  .detailBtn{
+    background-color: var(--secondary-color);
     position: absolute;
-    bottom: 0;
-    width: 150px;
-    height: 40px;
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    display: block;
-    align-self: center;
-    background-color: rgb(125, 242, 242);
-    outline: none;
-    border: none;
-    cursor: pointer;
+    bottom: 1rem;
+    color: rgb(61, 61, 61);
   }
+ 
