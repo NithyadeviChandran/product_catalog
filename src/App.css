@@ -2,3 +2,35 @@
   max-width: 1200px;
   margin: 0 auto;
 }
+.actionBtn {
+  width: var(--btn-width);
+  height: var(--btn-height);
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  align-self: center;
+  color: white;
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  &:hover{
+    background-color: var(--secondary-color);
+    color: grey;
+  }
+}
+
+.sortBtn {
+  height: 40px;
+  width: 100%;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  &:hover{
+    background-color: var(--secondary-color);
+    color: grey;
+  }
+}

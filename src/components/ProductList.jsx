@@ -8,7 +8,7 @@ const ProductList=()=> {
     const [currentPage, setcurrentPage] = useState(1)
     const [sortDirection, setSortDirection] =useState('asc')
     const [sortedProducts, setSortedProducts] = useState(products)
-    const [searchQuery, setSeacrhQuery] = useState('')
+    const [searchQuery, setSearchQuery] = useState('')
 
 const categories=[...new Set(products.map((product)=> product.category))];
 const limit=30;
@@ -72,16 +72,16 @@ async function fetchmoreproducts(limit,currentPage){
            ))
           }
         </select>
-        <label>Sort by Price:
-          <button onClick={handleSort} className={styles.sortBtn}> 
+        <label>
+          Sort by Price:  </label>
+          <button onClick={handleSort} className={`${styles.sortBtn} actionBtn`}> 
           {sortDirection==='asc'? 'Low to High' : 'High to Low'}
           </button>
-        </label>
         <input type='text'
         placeholder='Search'
         className={styles.inputField}
         value={searchQuery}
-        onChange={(e)=> setSeacrhQuery(e.target.value)}/>
+        onChange={(e)=> setSearchQuery(e.target.value)}/>
       </div>
       <div className={styles.cardsWrapper}>
         {searchQuery !== ''?
@@ -100,7 +100,7 @@ async function fetchmoreproducts(limit,currentPage){
         ))}
       
       </div>
-      <button className={styles.actionBtn} 
+      <button className={styles.actionBtn}
       onClick={()=>fetchmoreproducts(limit,currentPage)}
       disabled={currentPage>3}
       >

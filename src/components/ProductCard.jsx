@@ -1,8 +1,12 @@
 import React from 'react'
 import styles from './ProductCard.module.css'
+import { useNavigate } from 'react-router-dom'
 
 export const ProductCard=({product})=> {
-    console.log(product);
+  const navigate = useNavigate();
+  const openProductPage =()=> {
+    navigate(`/products/${product.id}`, {state:{product}})
+  }
   return (
     <>
     <div className={styles.cardWrapper}>
@@ -17,7 +21,7 @@ export const ProductCard=({product})=> {
             <p>Price:{product.price}</p>
         </div>
 
-            <button className={styles.actionBtn}>Details..</button>
+            <button className={`${styles.detailBtn} actionBtn`} onClick={openProductPage}>Details..</button>
     </div>
     </>
   )

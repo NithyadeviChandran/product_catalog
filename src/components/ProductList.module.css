@@ -8,18 +8,6 @@
     padding: 0.5rem;
 
   }
-  .sortBtn {
-    height: 40px;
-    background-color: var(--primary-color);
-    outline: none;
-    border: none;
-    cursor: pointer;
-    color: white;
-    &:hover{
-      background-color: var(--secondary-color);
-      color: grey;
-    }
-  }
   .cardsWrapper {
     display: flex;
     flex-direction: row;
@@ -31,21 +19,4 @@
     flex-direction: column;
     gap: 1rem;
   }
-  .actionBtn {
-    width: var(--btn-width);
-    height: var(--btn-height);
-    background-color: var(--primary-color);
-    outline: none;
-    border: none;
-    cursor: pointer;
-    align-self: center;
-    color: white;
-    &:disabled {
-      opacity: 0.7;
-      cursor: not-allowed;
-    }
-    &:hover{
-      background-color: var(--secondary-color);
-      color: grey;
-    }
-  }
+  
